@@ -3,43 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>Illuminati - Sign up</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="sidebar-img">
+    <div class="form-block">
+        <p>The lesser you know, the more you understand.<br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h2>Request for membership today!</h2>
+        <span class="mandatory">All fields below are mandatory</span>
+        <form action="" method="post">
+            <div class="inputs-block">
+                <div class="input-fields">
+                    <label for="name">Prefered Alias:</label>
+                    <input type="text" id="name" name="prefered-alias" required>
+                </div>
+                <div class="input-fields">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email-id" required>
+                </div>
+                <div class="input-fields">
+                    <label for="address">Bunker Address:</label>
+                    <textarea name="" id="address" cols="30" rows="6" required></textarea>
+                </div>    
+                <div class="input-fields">
+                    <label for="blood-group">Blood Group:</label>
+                    <select name="blood-group" id="blood-group" required>
+                        <option value="a-positive">A positive (A+)</option>
+                        <option value="a-negative">A negative (A-)</option>
+                        <option value="b-positive">B positive (B+)</option>
+                        <option value="b-negative">B negative (B-)</option>
+                        <option value="o-positive">O positive (O+)</option>
+                        <option value="o-negative">O negative (O-)</option>
+                        <option value="ab-positive">AB positive (AB+)</option>
+                        <option value="ab-negative">AB negative (AB-)</option>
+                    </select>
+                </div>    
+                <div class="input-fields">
+                    <label for="passcode">Passcode:</label>
+                    <input type="password" id="passcode" name="passcode" required>
+                </div>    
+                <div class="input-fields">
+                    <label for="confirm-passcode">Confirm Passcode:</label>
+                    <input type="password" id="confirm-passcode" name="passcode-recheck" required>
+                </div>    
+            </div>
+            <button class="apply-btn">APPLY</button>
+        </form>
+        <p>Already a member? <a href="#">Login</a></p>
+    </div>
+    <div class="side-hero">
         <h1>Illuminati</h1>
-        <img src="images/illuminati-sidebar.jpg">
+        <img src="images/illuminati-sidebar.jpg" class="sidebar-img">
         <p class="img-credits">
             Image by <a href="https://dribbble.com/justinoden">Justin Oden</a> 
                 from <a href="https://dribbble.com">Dribbble</a>
-        </p>    
+        </p>
     </div>
-    <div class="form-block">
-        <h2>Request for permission today!</h2>
-        <p>The lesser you know, the more you understand</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <form action="" method="post">
-            <label for="name">Prefered Alias:
-                <input type="text" id="name" name="prefered-alias" required>
-            </label>
-            <label for="email">Email ID:
-                <input type="email" id="email" name="email-id" required>
-            </label><br>
-            <label for="passcode">Passcode:
-                <input type="password" id="passcode" name="passcode" required>
-            </label>
-            <label for="confirm-passcode">Confirm Passcode:
-                <input type="password" id="confirm-passcode" name="passcode-recheck" required>
-            </label>
-            <button>Submit</button>
-        </form>
-    </div>
-
 </body>
 </html>
