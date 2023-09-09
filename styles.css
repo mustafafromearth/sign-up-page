@@ -21,7 +21,7 @@ h1{
 
 .sidebar-img{
     width: 30vw;
-    max-width: 30vw;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -64,7 +64,7 @@ h2{
 .inputs-block{
     margin: 1rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
     row-gap: 0.5rem;
 }
 
@@ -72,4 +72,5 @@ h2{
     padding: .3em .8em;
     font-size: medium;
     font-weight: bold;
+    background-color: #9cb1b3;
 }
